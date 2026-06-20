@@ -1,0 +1,6 @@
+{
+  "name": "꽃바람 동아리",
+  "description": "꽃가꾸기 동아리 '꽃바람' 정원을 소개하고 계절별 꽃 정보와 꽃가꾸기 스토리를 나누는 따뜻하고 감성적인 커뮤니티 공간입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

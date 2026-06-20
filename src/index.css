@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Gowun Batang", ui-serif, Georgia, serif;
+  --font-sans: "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Bento Grid Palette Alignment */
+  --color-sage-50: #f6f7f5;
+  --color-sage-100: #e2e5df;
+  --color-sage-200: #cbcfc5;
+  --color-sage-300: #a7aea0;
+  --color-sage-400: #89937c; /* Accent Green from design */
+  --color-sage-500: #6e7763;
+  --color-sage-600: #555c4c;
+  
+  --color-cream-50: #FAF9F6;  /* Background from design */
+  --color-cream-100: #f5f3eb;
+  --color-cream-200: #ebd9c5;
+  --color-cream-300: #dfc8b0;
+  
+  --color-blush-50: #fcf8f8;
+  --color-blush-100: #E9D1D1; /* Accent Pink from design */
+  --color-blush-200: #dba7a7;
+  --color-blush-300: #cf7b7b;
+  --color-blush-400: #bc5353;
+  --color-blush-500: #9a3737;
+
+  --color-peach-55: #F5E1D3; /* Accent Peach from design */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-50);
+  color: #4A4A4A; /* text-main from design */
+}
+
+.dot-pattern {
+  background-image: radial-gradient(#89937C 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.12;
+}
+
+/* Elegant glassmorphism & Bento border properties */
+.bento-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(219, 219, 219, 0.5);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(137, 147, 124, 0.15);
+  border-color: rgba(137, 147, 124, 0.4);
+}
+
+/* Custom scrollbar for an emotional rustic look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage-200);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-300);
+}
+
